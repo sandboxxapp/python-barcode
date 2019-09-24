@@ -35,12 +35,6 @@ setup(
             'python-barcode = barcode.pybarcode:main',
         ],
     },
-    use_scm_version={
-        'version_scheme': 'post-release',
-        'write_to': 'barcode/version.py',
-        'root' : '..',
-        'relative_to': os.path.dirname(__file__)
-    },
     setup_requires=['setuptools_scm'],
     extras_require={
         'images': ['pillow']
