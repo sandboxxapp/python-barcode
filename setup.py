@@ -2,7 +2,7 @@
 
 from pathlib import Path
 from setuptools import find_packages, setup
-
+import os
 
 setup(
     name='python-barcode',
@@ -38,6 +38,8 @@ setup(
     use_scm_version={
         'version_scheme': 'post-release',
         'write_to': 'barcode/version.py',
+        'root' : '..',
+        'relative_to': os.path.dirname(__file__)
     },
     setup_requires=['setuptools_scm'],
     extras_require={
