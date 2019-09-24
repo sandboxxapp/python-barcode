@@ -18,11 +18,11 @@ class Barcode(object):
     default_writer = SVGWriter
 
     default_writer_options = {
-        'module_width': 0.2,
-        'module_height': 15.0,
-        'quiet_zone': 6.5,
-        'font_size': 10,
-        'text_distance': 5.0,
+        'module_width': 10,
+        'module_height': 8,
+        'quiet_zone': 1,
+        'font_size': 12,
+        'text_distance': 2,
         'background': 'white',
         'foreground': 'black',
         'write_text': True,
