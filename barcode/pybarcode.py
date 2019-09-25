@@ -9,7 +9,6 @@ import barcode
 from argparse import ArgumentParser
 
 from barcode.writer import ImageWriter, SVGWriter
-from barcode.version import version
 
 # Optional PyQt4 GUI
 try:
